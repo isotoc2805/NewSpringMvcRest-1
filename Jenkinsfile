@@ -6,6 +6,14 @@ pipeline {
                 echo "Esta es el inicio"
             }
         }
+            
+             stage('Test2') {
+            steps {
+                 sh 'cat Jenkinsfile'
+            
+            }
+        } 
+            
         stage('Build') {
             steps {
                 sh 'mvn -B package'
